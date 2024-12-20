@@ -1,0 +1,13 @@
+QLineEdit {{
+    padding: 5px;
+    border: inherit; /* Usa a mesma borda padrão */
+    color: #8cbeff;
+}}
+
+QSpinBox {{
+    color: #8cbeff
+}}
+
+QPushButton {{
+    padding: 5px;
+}}
