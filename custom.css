@@ -1,6 +1,6 @@
 QLineEdit {{
-    padding: 5px;
-    border: inherit; /* Usa a mesma borda padrão */
+    padding: 3px;
+    border: inherit;
     color: #8cbeff;
 }}
 
