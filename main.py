@@ -2,7 +2,7 @@ from PySide6.QtWidgets import QApplication
 from main_window import MainWindow
 from qt_material import apply_stylesheet
 
-if __name__ == '__main__':
+def main():
     app = QApplication()
 
     window = MainWindow()
@@ -11,3 +11,6 @@ if __name__ == '__main__':
 
     window.show()
     app.exec()
+
+if __name__ == '__main__':
+    main()
