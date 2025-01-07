@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'windowviEZel.ui'
+## Form generated from reading UI file 'windowSrkwmx.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -128,7 +128,7 @@ class Ui_MainWindow(object):
         self.cpsMouseSpin.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.cpsMouseSpin.setAccelerated(True)
         self.cpsMouseSpin.setMinimum(1)
-        self.cpsMouseSpin.setMaximum(100)
+        self.cpsMouseSpin.setMaximum(250)
         self.cpsMouseSpin.setStepType(QAbstractSpinBox.StepType.DefaultStepType)
         self.cpsMouseSpin.setValue(10)
         self.cpsMouseSpin.setDisplayIntegerBase(10)
@@ -172,6 +172,7 @@ class Ui_MainWindow(object):
         self.rightModeButton.setFlat(False)
         self.tecladoBox = QGroupBox(self.centralwidget)
         self.tecladoBox.setObjectName(u"tecladoBox")
+        self.tecladoBox.setEnabled(True)
         self.tecladoBox.setGeometry(QRect(410, 60, 431, 281))
         self.tecladoBox.setStyleSheet(u"QGroupBox {\n"
 "    font-family: \"Segoe UI\", Arial, sans-serif;\n"
@@ -194,6 +195,7 @@ class Ui_MainWindow(object):
         self.tecladoBox.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.cpsKBSpin = QSpinBox(self.tecladoBox)
         self.cpsKBSpin.setObjectName(u"cpsKBSpin")
+        self.cpsKBSpin.setEnabled(False)
         self.cpsKBSpin.setGeometry(QRect(260, 71, 91, 25))
         self.cpsKBSpin.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
         self.cpsKBSpin.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
@@ -207,22 +209,26 @@ class Ui_MainWindow(object):
         self.cpsKBSpin.setDisplayIntegerBase(10)
         self.cpsKBLabel = QLabel(self.tecladoBox)
         self.cpsKBLabel.setObjectName(u"cpsKBLabel")
+        self.cpsKBLabel.setEnabled(False)
         self.cpsKBLabel.setGeometry(QRect(30, 70, 225, 23))
         self.cpsKBLabel.setFont(font3)
         self.cpsKBLabel.setStyleSheet(u"font: 15pt \"Verdana\";")
         self.bindKBButton = QPushButton(self.tecladoBox)
         self.bindKBButton.setObjectName(u"bindKBButton")
+        self.bindKBButton.setEnabled(False)
         self.bindKBButton.setGeometry(QRect(200, 140, 191, 31))
         self.bindKBButton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.bindKBButton.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self.bindKBButton.setStyleSheet(u"font: 10pt \"Verdana\";")
         self.keybindKBLabel = QLabel(self.tecladoBox)
         self.keybindKBLabel.setObjectName(u"keybindKBLabel")
+        self.keybindKBLabel.setEnabled(False)
         self.keybindKBLabel.setGeometry(QRect(30, 140, 105, 25))
         self.keybindKBLabel.setFont(font1)
         self.keybindKBLabel.setStyleSheet(u"font: 16pt \"Verdana\";")
         self.bindKBLineEdit = QLineEdit(self.tecladoBox)
         self.bindKBLineEdit.setObjectName(u"bindKBLineEdit")
+        self.bindKBLineEdit.setEnabled(False)
         self.bindKBLineEdit.setGeometry(QRect(150, 140, 31, 31))
         self.bindKBLineEdit.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
         self.bindKBLineEdit.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
@@ -234,16 +240,19 @@ class Ui_MainWindow(object):
         self.bindKBLineEdit.setReadOnly(True)
         self.modeKBLabel = QLabel(self.tecladoBox)
         self.modeKBLabel.setObjectName(u"modeKBLabel")
+        self.modeKBLabel.setEnabled(False)
         self.modeKBLabel.setGeometry(QRect(30, 210, 64, 25))
         self.modeKBLabel.setStyleSheet(u"font: 16pt \"Verdana\";")
         self.clickBindButton = QPushButton(self.tecladoBox)
         self.clickBindButton.setObjectName(u"clickBindButton")
+        self.clickBindButton.setEnabled(False)
         self.clickBindButton.setGeometry(QRect(200, 210, 191, 31))
         self.clickBindButton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.clickBindButton.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         self.clickBindButton.setStyleSheet(u"font: 10pt \"Verdana\";")
         self.clickBindKB = QLineEdit(self.tecladoBox)
         self.clickBindKB.setObjectName(u"clickBindKB")
+        self.clickBindKB.setEnabled(False)
         self.clickBindKB.setGeometry(QRect(100, 210, 81, 31))
         self.clickBindKB.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
         self.clickBindKB.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
@@ -253,6 +262,10 @@ class Ui_MainWindow(object):
         self.clickBindKB.setFrame(True)
         self.clickBindKB.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.clickBindKB.setReadOnly(True)
+        self.label = QLabel(self.tecladoBox)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(70, 26, 287, 38))
+        self.label.setStyleSheet(u"font: 700 22pt \"Segoe UI\";")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusBar = QStatusBar(MainWindow)
         self.statusBar.setObjectName(u"statusBar")
@@ -288,5 +301,6 @@ class Ui_MainWindow(object):
         self.modeKBLabel.setText(QCoreApplication.translate("MainWindow", u"Tecla:", None))
         self.clickBindButton.setText(QCoreApplication.translate("MainWindow", u"CLIQUE AQUI PARA BINDAR", None))
         self.clickBindKB.setText("")
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Em desenvolvimento", None))
     # retranslateUi
 

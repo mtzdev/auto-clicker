@@ -228,7 +228,7 @@ QGroupBox::title {
       <number>1</number>
      </property>
      <property name="maximum">
-      <number>100</number>
+      <number>250</number>
      </property>
      <property name="stepType">
       <enum>QAbstractSpinBox::StepType::DefaultStepType</enum>
@@ -318,8 +318,7 @@ QGroupBox::title {
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
      </property>
      <property name="styleSheet">
-      <string notr="true">
-</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>ESQUERDO</string>
@@ -376,6 +375,9 @@ QGroupBox::title {
     </widget>
    </widget>
    <widget class="QGroupBox" name="tecladoBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -411,6 +413,9 @@ QGroupBox::title {
      <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
     <widget class="QSpinBox" name="cpsKBSpin">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>260</x>
@@ -451,6 +456,9 @@ QGroupBox::title {
      </property>
     </widget>
     <widget class="QLabel" name="cpsKBLabel">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -475,6 +483,9 @@ QGroupBox::title {
      </property>
     </widget>
     <widget class="QPushButton" name="bindKBButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -497,6 +508,9 @@ QGroupBox::title {
      </property>
     </widget>
     <widget class="QLabel" name="keybindKBLabel">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -521,6 +535,9 @@ QGroupBox::title {
      </property>
     </widget>
     <widget class="QLineEdit" name="bindKBLineEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -558,6 +575,9 @@ QGroupBox::title {
      </property>
     </widget>
     <widget class="QLabel" name="modeKBLabel">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -574,6 +594,9 @@ QGroupBox::title {
      </property>
     </widget>
     <widget class="QPushButton" name="clickBindButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -596,6 +619,9 @@ QGroupBox::title {
      </property>
     </widget>
     <widget class="QLineEdit" name="clickBindKB">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>100</x>
@@ -630,6 +656,22 @@ QGroupBox::title {
      </property>
      <property name="readOnly">
       <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>26</y>
+       <width>287</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 22pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Em desenvolvimento</string>
      </property>
     </widget>
    </widget>
