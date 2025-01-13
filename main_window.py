@@ -1,6 +1,6 @@
 from autoclick import ClickHandler, ClickerWorker
 from buttons import ButtonControl
-from PySide6.QtWidgets import QMainWindow
+from PySide6.QtWidgets import QMainWindow, QLabel
 from PySide6.QtCore import QThread
 from PySide6.QtGui import QCloseEvent
 from ui.window import Ui_MainWindow
@@ -11,9 +11,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         self.setWindowTitle('MTZ Auto-Clicker')
-        self.statusBar.showMessage('Beta - v0.5')
         self.setFixedSize(self.width(), self.height())
 
+        # Status Bar
+        github_label = QLabel('Developed by mtz - <a href="https://github.com/mtzdev/auto-clicker/" style="color: #2D8CEC;">GitHub Repo</a>')
+        github_label.setOpenExternalLinks(True)  # Permitir abrir o link
+        self.statusBar.addWidget(github_label)
+
+        # Botões / Conexões
         self.buttons = ButtonControl(self, self.leftModeButton, self.rightModeButton)
 
         self.leftModeButton.clicked.connect(self.buttons.m_LeftModeClicked)

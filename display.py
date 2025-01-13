@@ -1,4 +1,4 @@
-from PySide6.QtCore import Qt, Signal
+from PySide6.QtCore import Qt, Signal, Slot
 from PySide6.QtGui import QKeyEvent
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox
 
@@ -43,6 +43,7 @@ class KeyBindWindow(QWidget):
             self.line_edit.setText(event.text().upper())
         return event.ignore()
 
+    @Slot()
     def confirm_key(self):
         if bool(self.line_edit.text().strip()):
             self.keybind = self.line_edit.text().upper()

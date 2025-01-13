@@ -1,3 +1,4 @@
+from PySide6.QtCore import Slot
 from PySide6.QtWidgets import QPushButton
 from display import KeyBindWindow
 from typing import TYPE_CHECKING
@@ -16,18 +17,21 @@ class ButtonControl:
         self.bindWindow = KeyBindWindow()
         self.bindWindow.keybindSignal.connect(lambda keybind: self.window.BindMLineEdit.setText(keybind))
 
+    @Slot()
     def m_LeftModeClicked(self):
         self.leftMouseModeButton.setDisabled(True)
         self.rightMouseModeButton.setDisabled(False)
         self.window.modeMLabel.setFocus()
         self.MouseActiveMode = 'left'
 
+    @Slot()
     def m_RightModeClicked(self):
         self.leftMouseModeButton.setDisabled(False)
         self.rightMouseModeButton.setDisabled(True)
         self.window.modeMLabel.setFocus()
         self.MouseActiveMode = 'right'
 
+    @Slot()
     def m_BindButton(self):
         self.bindWindow.show()
 
