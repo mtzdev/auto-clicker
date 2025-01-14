@@ -173,7 +173,7 @@ class Ui_MainWindow(object):
         self.tecladoBox = QGroupBox(self.centralwidget)
         self.tecladoBox.setObjectName(u"tecladoBox")
         self.tecladoBox.setEnabled(True)
-        self.tecladoBox.setGeometry(QRect(410, 60, 431, 281))
+        self.tecladoBox.setGeometry(QRect(410, 60, 426, 281))
         self.tecladoBox.setStyleSheet(u"QGroupBox {\n"
 "    font-family: \"Segoe UI\", Arial, sans-serif;\n"
 "    font-size: 16px;\n"

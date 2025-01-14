@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../logo.ico</normaloff>../logo.ico</iconset>
+  </property>
   <property name="tabShape">
    <enum>QTabWidget::TabShape::Rounded</enum>
   </property>
@@ -382,7 +386,7 @@ QGroupBox::title {
      <rect>
       <x>410</x>
       <y>60</y>
-      <width>431</width>
+      <width>426</width>
       <height>281</height>
      </rect>
     </property>
