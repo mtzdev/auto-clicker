@@ -6,11 +6,11 @@ from PySide6.QtCore import QObject, Signal, Slot
 class ClickHandler(QObject):
     keyPressed = Signal()
 
-    def __init__(self, keybind = '', cpsInterval = 0.1):
+    def __init__(self, keybind = ''):
         super().__init__()
         self.keybind = keybind
         self.isRunning = False
-        self.cpsInterval = cpsInterval
+        self.cpsInterval = 0.1
         self.side = mouse.Button.left
         self.listener = Listener(on_release=self.on_release)
 

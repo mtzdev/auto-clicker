@@ -1,3 +1,4 @@
+from db import setup_db
 import os
 import sys
 from PySide6.QtWidgets import QApplication
@@ -15,6 +16,7 @@ def get_resource(file):  # necessario para obter arquivos apos pyinstaller
 
 def main():
     app = QApplication()
+    setup_db()
 
     window = MainWindow()
 
