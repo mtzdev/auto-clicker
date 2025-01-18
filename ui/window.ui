@@ -256,6 +256,9 @@ QGroupBox::title {
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
+     </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
      </property>
@@ -277,6 +280,9 @@ QGroupBox::title {
      </property>
      <property name="cursor">
       <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
      </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
@@ -318,6 +324,9 @@ QGroupBox::title {
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
+     </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
      </property>
@@ -345,6 +354,9 @@ QGroupBox::title {
      </property>
      <property name="mouseTracking">
       <bool>false</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
      </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
@@ -418,7 +430,7 @@ QGroupBox::title {
     </property>
     <widget class="QSpinBox" name="cpsKBSpin">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -461,7 +473,7 @@ QGroupBox::title {
     </widget>
     <widget class="QLabel" name="cpsKBLabel">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -488,7 +500,7 @@ QGroupBox::title {
     </widget>
     <widget class="QPushButton" name="bindKBButton">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -500,6 +512,9 @@ QGroupBox::title {
      </property>
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
      </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
@@ -513,7 +528,7 @@ QGroupBox::title {
     </widget>
     <widget class="QLabel" name="keybindKBLabel">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -540,7 +555,7 @@ QGroupBox::title {
     </widget>
     <widget class="QLineEdit" name="bindKBLineEdit">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -552,6 +567,9 @@ QGroupBox::title {
      </property>
      <property name="cursor">
       <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
      </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
@@ -580,7 +598,7 @@ QGroupBox::title {
     </widget>
     <widget class="QLabel" name="modeKBLabel">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -599,7 +617,7 @@ QGroupBox::title {
     </widget>
     <widget class="QPushButton" name="clickBindButton">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -611,6 +629,9 @@ QGroupBox::title {
      </property>
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
      </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
@@ -624,7 +645,7 @@ QGroupBox::title {
     </widget>
     <widget class="QLineEdit" name="clickBindKB">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -637,6 +658,9 @@ QGroupBox::title {
      <property name="cursor">
       <cursorShape>ArrowCursor</cursorShape>
      </property>
+     <property name="focusPolicy">
+      <enum>Qt::FocusPolicy::NoFocus</enum>
+     </property>
      <property name="contextMenuPolicy">
       <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
      </property>
@@ -644,7 +668,7 @@ QGroupBox::title {
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 12pt &quot;Verdana&quot;;</string>
+      <string notr="true">font: 13pt &quot;Verdana&quot;;</string>
      </property>
      <property name="text">
       <string/>
@@ -660,22 +684,6 @@ QGroupBox::title {
      </property>
      <property name="readOnly">
       <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>26</y>
-       <width>287</width>
-       <height>38</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 700 22pt &quot;Segoe UI&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Em desenvolvimento</string>
      </property>
     </widget>
    </widget>

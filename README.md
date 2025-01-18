@@ -1,5 +1,4 @@
 # AutoClicker
-**`OBS: O aplicativo ainda está em desenvolvimento e sofrerá alterações significativas.`**<br><br>
 Um autoclicker simples e eficiente feito em **Python** utilizando principalmente **PySide6** e **pynput**. O aplicativo oferece duas funcionalidades principais:
 
 1. **AutoClicker para Mouse**: Realiza cliques contínuos na tela com uma taxa configurável por segundo.
@@ -29,6 +28,25 @@ pyinstaller --onefile --noconsole main.py
 ```
 4. **Acessar o executável**: Após compilar, o arquivo executável estará na pasta `dist/`
 5. **Executar o programa**: Agora você pode abrir o programa sem precisar do Python e dos outros arquivos!
+
+## 💻 Como usar:
+O AutoClick possui duas seções principais: Mouse e Teclado. Abaixo, a explicação para cada uma:
+### 🖱 Mouse: Efetua cliques de mouse automaticamente
+1. Defina a quantidade de cliques por segundo que o AutoClick deverá realizar.
+2. Clique no botão para definir uma key-bind (tecla de ativação), e essa tecla será responsável por ligar/desligar o AutoClick.
+3. Se quiser, pode mudar o lado do mouse que será efetuado os cliques (Esquerda/Direita)
+4. Após a configuração, basta clicar na tecla escolhida que os cliques serão efetuados, e para desativar, basta pressiona-la novamente.
+
+### ⌨ Teclado: Efetua cliques em uma tecla automaticamente
+1. Configure quantos cliques por segundo o autoclick deverá realizar.
+2. Clique no botão para definir uma key-bind que será a tecla responsável por ativar/desativar o Autoclick.
+3. Escolha a tecla a ser pressionada automaticamente pelo Autoclick.
+4. Agora basta clicar na tecla de key-bind que os cliques serão efetuados. Para desativar, clique na mesma tecla.
+
+**OBS¹**: Você não pode usar a mesma tecla de ativação para o Mouse e Teclado.
+<br>
+**OBS²**: Caso você deseje desabilitar ou parar de usar uma das seções (Mouse ou Teclado), basta clicar no botão de escolher uma key-bind, e clicar em "Resetar/Desabilitar", assim você removerá a key-bind de ativação e essa seção não será mais ativada sem que você queira.
+  
 
 ## 📜 Licença
 Este projeto está licenciado sob a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/)

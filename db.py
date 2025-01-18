@@ -7,7 +7,6 @@ FOLDER = os.path.join(APPDATA, 'mtz autoclick')
 CONFIG_FILE = os.path.join(FOLDER, 'config.json')
 
 # TODO: Implementar pasta/caminho para salvar em linux
-# TODO: Criar funções para salvar configs do teclado
 
 class CpsConfigSave:
     def __init__(self, input_type):
@@ -26,7 +25,7 @@ class CpsConfigSave:
             if self.type == 'mouse':
                 _update_mouse_cps(self.cps)
             elif self.type == 'keyboard':
-                ...
+                _update_keyboard_cps(self.cps)
             self.cps = None
 
 def setup_db():
@@ -43,6 +42,7 @@ def setup_db():
         "keyboard": {
             "cps": 15,
             "bind": "",
+            "keyDisplay": "",
             "key": ""}
     }
 
@@ -57,7 +57,7 @@ def get_config():
         with open(CONFIG_FILE, 'r') as config_file:
             return json.load(config_file)
     except json.JSONDecodeError:
-        return {"mouse": {"cps": 11, "bind": "", "side": "left"}, "keyboard": {"cps": 11, "bind": "", "key": ""}}
+        return {"mouse": {"cps": 11, "bind": "", "side": "left"}, "keyboard": {"cps": 11, "bind": "", "keyDisplay": "","key": ""}}
 
 def save_config(config):
     with open(CONFIG_FILE, 'w') as config_file:
@@ -89,4 +89,36 @@ def update_mouse_side(side):
 
     config = get_config()
     config['mouse']['side'] = str(side).lower().strip()
+    save_config(config)
+
+def _update_keyboard_cps(value):
+    if not os.path.exists(CONFIG_FILE):
+        setup_db()
+
+    config = get_config()
+    config['keyboard']['cps'] = int(value)
+    save_config(config)
+
+def update_keyboard_bind(key):
+    if not os.path.exists(CONFIG_FILE):
+        setup_db()
+
+    config = get_config()
+    config['keyboard']['bind'] = str(key).lower().strip()
+    save_config(config)
+
+def update_keyboard_keydisplay(key):
+    if not os.path.exists(CONFIG_FILE):
+        setup_db()
+
+    config = get_config()
+    config['keyboard']['keyDisplay'] = key
+    save_config(config)
+
+def update_keyboard_key(key):
+    if not os.path.exists(CONFIG_FILE):
+        setup_db()
+
+    config = get_config()
+    config['keyboard']['key'] = key
     save_config(config)
